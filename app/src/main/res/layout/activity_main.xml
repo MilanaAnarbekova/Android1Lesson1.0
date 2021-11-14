@@ -63,7 +63,8 @@
         android:layout_height="wrap_content"
         android:contextClickable="true"
         app:layout_constraintTop_toBottomOf="@+id/login"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:boxStrokeColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -94,8 +95,9 @@
     app:layout_constraintTop_toBottomOf="@+id/forget"
     android:layout_marginTop="20dp"
     android:textColor="@color/grey"
+    android:onClick="onGOClick"
     android:text="GO"
-    android:enabled="false"/>
+    />
 
     <TextView
         android:layout_width="match_parent"

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:src="@drawable/ic_person"
+        android:id="@+id/imageOfSecond"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="34dp"/>
+
+    <TextView
+        android:id="@+id/Click_Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageOfSecond"
+        android:layout_marginTop="14dp"
+        android:text="Edit Photo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/purple_200"/>
+
+
+    <EditText
+        android:id="@+id/ET_first"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint=" First Name"
+        app:layout_constraintTop_toBottomOf="@id/Click_Photo"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/ET_second"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ET_first"
+        android:layout_marginTop="30dp"
+        android:hint=" Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ET_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:text="Private Information"
+        android:textColor="@color/grey"
+        android:textSize="24dp"/>
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Private"
+        android:layout_marginTop="24dp"
+        android:hint=" Email"
+
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        android:hint=" Phone"
+
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:inputType="textPassword"
+        android:hint=" Password"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="145dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
